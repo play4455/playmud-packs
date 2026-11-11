@@ -1,0 +1,106 @@
+{
+  "name": "One-time approved public packs to raw Git",
+  "run-name": "Reviewed pack import; no PAT; no server operations",
+  "on": {
+    "workflow_dispatch": {
+      "inputs": {
+        "base_sha": {
+          "description": "Reviewed current main commit SHA (40 lowercase hex)",
+          "required": true,
+          "type": "string"
+        },
+        "confirmation": {
+          "description": "After separate consent, type APPROVE_ONCE_REPO_CONTENTS_WRITE",
+          "required": true,
+          "default": "SEPARATE_USER_APPROVAL_REQUIRED",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "permissions": {},
+  "concurrency": {
+    "group": "playmud-one-time-public-pack-import",
+    "cancel-in-progress": false
+  },
+  "env": {
+    "IMPORT_SCRIPT_SHA256": "5c8d70ff98443370834ba305d2034796c056a2334ceb161c2c02650d9ae2b247",
+    "IMPORT_MANIFEST_SHA256": "3c884dc49ac4c7381ffe6334e12f442b20775b7b32eb7505b820d0f30019ab66",
+    "IMPORT_EXPECTED_COUNT": "35",
+    "IMPORT_EXPECTED_BYTES": "649447680",
+    "IMPORT_BASE_SHA": "${{ inputs.base_sha }}",
+    "IMPORT_CONFIRMATION": "${{ inputs.confirmation }}",
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONPATH": ""
+  },
+  "jobs": {
+    "verify_sources": {
+      "if": "github.event_name == 'workflow_dispatch' && github.repository == 'play4455/playmud-packs' && github.ref == 'refs/heads/main' && inputs.confirmation == 'APPROVE_ONCE_REPO_CONTENTS_WRITE'",
+      "runs-on": "ubuntu-24.04",
+      "timeout-minutes": 30,
+      "permissions": {},
+      "outputs": {
+        "manifest_sha256": "${{ steps.operation.outputs.manifest_sha256 }}"
+      },
+      "steps": [
+        {
+          "name": "Pinned standard-library importer: verify",
+          "id": "operation",
+          "env": {
+            "IMPORT_MODE": "verify"
+          },
+          "shell": "bash",
+          "run": "python3 -I - <<'PY'\nimport hashlib, os, pathlib, re, subprocess, sys, tempfile, urllib.request\nif (os.environ.get(\"GITHUB_REPOSITORY\") != \"play4455/playmud-packs\"\n    or os.environ.get(\"GITHUB_REF\") != \"refs/heads/main\"\n    or os.environ.get(\"GITHUB_EVENT_NAME\") != \"workflow_dispatch\"\n    or os.environ.get(\"IMPORT_CONFIRMATION\") != \"APPROVE_ONCE_REPO_CONTENTS_WRITE\"):\n    raise SystemExit(\"MANUAL_REVIEWED_CONTEXT_REQUIRED\")\ncommit = os.environ.get(\"GITHUB_SHA\", \"\")\nif not re.fullmatch(\"[0-9a-f]{40}\", commit) or commit != os.environ.get(\"IMPORT_BASE_SHA\"):\n    raise SystemExit(\"REVIEWED_BASE_COMMIT_REQUIRED\")\nclass NoRedirect(urllib.request.HTTPRedirectHandler):\n    def redirect_request(self, *args):\n        raise RuntimeError(\"BOOTSTRAP_REDIRECT_REFUSED\")\nopener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())\nbase = \"https://raw.githubusercontent.com/play4455/playmud-packs/\" + commit + \"/\"\ntry:\n    with tempfile.TemporaryDirectory(prefix=\"pinned-import-source-\", dir=os.environ[\"RUNNER_TEMP\"]) as temp:\n        root = pathlib.Path(temp)\n        for remote, local, pin in [\n            (\".github/scripts/import_public_packs.py\", \"import_public_packs.py\", \"IMPORT_SCRIPT_SHA256\"),\n            (\".github/import/import-manifest.json\", \"import-manifest.json\", \"IMPORT_MANIFEST_SHA256\")]:\n            with opener.open(base + remote, timeout=20) as response:\n                data = response.read(262145)\n                if response.status != 200 or len(data) > 262144 or hashlib.sha256(data).hexdigest() != os.environ[pin]:\n                    raise RuntimeError(\"PINNED_SOURCE_DOWNLOAD_MISMATCH\")\n            (root / local).write_bytes(data)\n        result = subprocess.run([sys.executable, \"-I\", str(root / \"import_public_packs.py\"),\n                                 os.environ[\"IMPORT_MODE\"], str(root / \"import-manifest.json\")])\n        raise SystemExit(result.returncode)\nexcept SystemExit:\n    raise\nexcept Exception:\n    raise SystemExit(\"BOOTSTRAP_FAILED_NO_CREDENTIAL_DIAGNOSTICS\")\nPY\n"
+        }
+      ]
+    },
+    "publish_once": {
+      "if": "github.event_name == 'workflow_dispatch' && github.repository == 'play4455/playmud-packs' && github.ref == 'refs/heads/main' && inputs.confirmation == 'APPROVE_ONCE_REPO_CONTENTS_WRITE'",
+      "needs": [
+        "verify_sources"
+      ],
+      "runs-on": "ubuntu-24.04",
+      "timeout-minutes": 30,
+      "permissions": {
+        "contents": "write"
+      },
+      "outputs": {
+        "published_commit": "${{ steps.operation.outputs.published_commit }}"
+      },
+      "steps": [
+        {
+          "name": "Pinned standard-library importer: publish",
+          "id": "operation",
+          "env": {
+            "IMPORT_MODE": "publish",
+            "IMPORT_VERIFIED_MANIFEST_SHA256": "${{ needs.verify_sources.outputs.manifest_sha256 }}",
+            "GITHUB_TOKEN": "${{ github.token }}"
+          },
+          "shell": "bash",
+          "run": "python3 -I - <<'PY'\nimport hashlib, os, pathlib, re, subprocess, sys, tempfile, urllib.request\nif (os.environ.get(\"GITHUB_REPOSITORY\") != \"play4455/playmud-packs\"\n    or os.environ.get(\"GITHUB_REF\") != \"refs/heads/main\"\n    or os.environ.get(\"GITHUB_EVENT_NAME\") != \"workflow_dispatch\"\n    or os.environ.get(\"IMPORT_CONFIRMATION\") != \"APPROVE_ONCE_REPO_CONTENTS_WRITE\"):\n    raise SystemExit(\"MANUAL_REVIEWED_CONTEXT_REQUIRED\")\ncommit = os.environ.get(\"GITHUB_SHA\", \"\")\nif not re.fullmatch(\"[0-9a-f]{40}\", commit) or commit != os.environ.get(\"IMPORT_BASE_SHA\"):\n    raise SystemExit(\"REVIEWED_BASE_COMMIT_REQUIRED\")\nclass NoRedirect(urllib.request.HTTPRedirectHandler):\n    def redirect_request(self, *args):\n        raise RuntimeError(\"BOOTSTRAP_REDIRECT_REFUSED\")\nopener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())\nbase = \"https://raw.githubusercontent.com/play4455/playmud-packs/\" + commit + \"/\"\ntry:\n    with tempfile.TemporaryDirectory(prefix=\"pinned-import-source-\", dir=os.environ[\"RUNNER_TEMP\"]) as temp:\n        root = pathlib.Path(temp)\n        for remote, local, pin in [\n            (\".github/scripts/import_public_packs.py\", \"import_public_packs.py\", \"IMPORT_SCRIPT_SHA256\"),\n            (\".github/import/import-manifest.json\", \"import-manifest.json\", \"IMPORT_MANIFEST_SHA256\")]:\n            with opener.open(base + remote, timeout=20) as response:\n                data = response.read(262145)\n                if response.status != 200 or len(data) > 262144 or hashlib.sha256(data).hexdigest() != os.environ[pin]:\n                    raise RuntimeError(\"PINNED_SOURCE_DOWNLOAD_MISMATCH\")\n            (root / local).write_bytes(data)\n        result = subprocess.run([sys.executable, \"-I\", str(root / \"import_public_packs.py\"),\n                                 os.environ[\"IMPORT_MODE\"], str(root / \"import-manifest.json\")])\n        raise SystemExit(result.returncode)\nexcept SystemExit:\n    raise\nexcept Exception:\n    raise SystemExit(\"BOOTSTRAP_FAILED_NO_CREDENTIAL_DIAGNOSTICS\")\nPY\n"
+        }
+      ]
+    },
+    "verify_raw": {
+      "if": "github.event_name == 'workflow_dispatch' && github.repository == 'play4455/playmud-packs' && github.ref == 'refs/heads/main' && inputs.confirmation == 'APPROVE_ONCE_REPO_CONTENTS_WRITE'",
+      "needs": [
+        "publish_once"
+      ],
+      "runs-on": "ubuntu-24.04",
+      "timeout-minutes": 30,
+      "permissions": {},
+      "steps": [
+        {
+          "name": "Pinned standard-library importer: verify-raw",
+          "id": "operation",
+          "env": {
+            "IMPORT_MODE": "verify-raw",
+            "IMPORT_PUBLISHED_COMMIT": "${{ needs.publish_once.outputs.published_commit }}"
+          },
+          "shell": "bash",
+          "run": "python3 -I - <<'PY'\nimport hashlib, os, pathlib, re, subprocess, sys, tempfile, urllib.request\nif (os.environ.get(\"GITHUB_REPOSITORY\") != \"play4455/playmud-packs\"\n    or os.environ.get(\"GITHUB_REF\") != \"refs/heads/main\"\n    or os.environ.get(\"GITHUB_EVENT_NAME\") != \"workflow_dispatch\"\n    or os.environ.get(\"IMPORT_CONFIRMATION\") != \"APPROVE_ONCE_REPO_CONTENTS_WRITE\"):\n    raise SystemExit(\"MANUAL_REVIEWED_CONTEXT_REQUIRED\")\ncommit = os.environ.get(\"GITHUB_SHA\", \"\")\nif not re.fullmatch(\"[0-9a-f]{40}\", commit) or commit != os.environ.get(\"IMPORT_BASE_SHA\"):\n    raise SystemExit(\"REVIEWED_BASE_COMMIT_REQUIRED\")\nclass NoRedirect(urllib.request.HTTPRedirectHandler):\n    def redirect_request(self, *args):\n        raise RuntimeError(\"BOOTSTRAP_REDIRECT_REFUSED\")\nopener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())\nbase = \"https://raw.githubusercontent.com/play4455/playmud-packs/\" + commit + \"/\"\ntry:\n    with tempfile.TemporaryDirectory(prefix=\"pinned-import-source-\", dir=os.environ[\"RUNNER_TEMP\"]) as temp:\n        root = pathlib.Path(temp)\n        for remote, local, pin in [\n            (\".github/scripts/import_public_packs.py\", \"import_public_packs.py\", \"IMPORT_SCRIPT_SHA256\"),\n            (\".github/import/import-manifest.json\", \"import-manifest.json\", \"IMPORT_MANIFEST_SHA256\")]:\n            with opener.open(base + remote, timeout=20) as response:\n                data = response.read(262145)\n                if response.status != 200 or len(data) > 262144 or hashlib.sha256(data).hexdigest() != os.environ[pin]:\n                    raise RuntimeError(\"PINNED_SOURCE_DOWNLOAD_MISMATCH\")\n            (root / local).write_bytes(data)\n        result = subprocess.run([sys.executable, \"-I\", str(root / \"import_public_packs.py\"),\n                                 os.environ[\"IMPORT_MODE\"], str(root / \"import-manifest.json\")])\n        raise SystemExit(result.returncode)\nexcept SystemExit:\n    raise\nexcept Exception:\n    raise SystemExit(\"BOOTSTRAP_FAILED_NO_CREDENTIAL_DIAGNOSTICS\")\nPY\n"
+        }
+      ]
+    }
+  }
+}
