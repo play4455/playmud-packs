@@ -1,0 +1,553 @@
+{
+  "schema": 1,
+  "repository": "play4455/playmud-packs",
+  "branch": "main",
+  "files": [
+    {
+      "name": "playmud-sync-java-cso_lobby-1.0.0.zip",
+      "sha256": "ee72a7b11c2445255dac86724a01d9ab494fced9738172f65e805989eafaeb54",
+      "bytes": 1676352,
+      "edition": "java",
+      "category": "music",
+      "uuid": "0716f7d4-75d8-5242-8339-b4d82fb58e08",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-cso_lobby-1.0.0.zip",
+      "sha256": "93b0daee48f3e15cb4259fa161e0f3eb0bdfad00415347e1dadcb5d3881b6e81",
+      "bytes": 1675354,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "dab52130-c6d2-5f75-bc21-c2a86afe2a94",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-cso_christmas-1.0.0.zip",
+      "sha256": "aeecb568ce3a52d8e624de00ad045b9fb5a8f80f933db45c70c2435ea14d5967",
+      "bytes": 854652,
+      "edition": "java",
+      "category": "music",
+      "uuid": "91f04b1a-1566-52f5-a598-37b2f5cc0036",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-cso_christmas-1.0.0.zip",
+      "sha256": "ee90282f8fac97f0d1053d7473db770da52664a7db61a19b1eb955a3de9607d3",
+      "bytes": 854206,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "18c684c2-014f-5353-8569-9d65e503e2fe",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-cso_8bit_lobby-1.0.0.zip",
+      "sha256": "a625ca7ceb9957b0d0a4be87e1edfb2c0dae14d3433599adc53d21a61f731441",
+      "bytes": 932200,
+      "edition": "java",
+      "category": "music",
+      "uuid": "c128c9d1-e81b-52d6-9846-27ad60dfa077",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-cso_8bit_lobby-1.0.0.zip",
+      "sha256": "4cedbf66123cd063199f546a9baa94220c99a30b4e982b02ae807a2dea09587c",
+      "bytes": 931921,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "a51f520b-5e4d-55fd-bd28-b8f55d4d1df8",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_naemeori-1.0.0.zip",
+      "sha256": "a0c0170e45b5e1d8d0a1321ab94a5ec26fa1e2eb59abd5ba047c080d2a86092a",
+      "bytes": 2772200,
+      "edition": "java",
+      "category": "music",
+      "uuid": "89f7bc03-7f14-5c7e-b97c-a7c43a225ab9",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_naemeori-1.0.0.zip",
+      "sha256": "5b3e9951421dbbdb828cdb56c2439c13b9a4f97dbec20a6b3d8bc0225356156b",
+      "bytes": 2770633,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "b077c79d-2750-5e29-bc2f-b36c0e301b9f",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_tokyo_teddy_bear-1.0.0.zip",
+      "sha256": "958cf8b57c1c420b631167e894b02f2fae651131b21c2e55b061810e60ed7ddf",
+      "bytes": 39229535,
+      "edition": "java",
+      "category": "music",
+      "uuid": "05253a6a-1f96-5a3f-841b-8500f3f57e20",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_tokyo_teddy_bear-1.0.0.zip",
+      "sha256": "6f697a141334bb45f57897f7052f46a6660a693f59999f164460f6f030870fb4",
+      "bytes": 39205595,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "a6bec25d-3eeb-50e2-a702-49583a9d1a82",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_freestyle_y-1.0.0.zip",
+      "sha256": "27c0f19a4e5fe4ef74ba6c0c3f03b74450881071525b4cfbd9b48a26ae97b2a7",
+      "bytes": 3268278,
+      "edition": "java",
+      "category": "music",
+      "uuid": "f2a02f08-bf57-56ef-b87b-c67e0171f445",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_freestyle_y-1.0.0.zip",
+      "sha256": "ade24df25b75d74eee2cb2178aa962851c084717521783722ca23c625f2d1bdd",
+      "bytes": 3266559,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "4d03f00f-7a19-5f6d-9224-d498f6c15273",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_hurts_like_death-1.0.0.zip",
+      "sha256": "e1769a817c7cc995b1203a389b31f8e5a38fc0ca624c2677ed1cd135166a6a3c",
+      "bytes": 3027584,
+      "edition": "java",
+      "category": "music",
+      "uuid": "f30fa370-bc52-5883-a3ce-0d0f6b4a39b3",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_hurts_like_death-1.0.0.zip",
+      "sha256": "80999d43f8f827a34315e45aaae0343cd44b04a9fd2fc8b2ce5a4f2b75823841",
+      "bytes": 3025973,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "169de5a6-7c40-5147-9006-35418c64a4d3",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_nyang_nyang-1.0.0.zip",
+      "sha256": "eaa4c21ed618ed5caca0d3596972de6bb674b1dadde463a18c00046eec7cb1b9",
+      "bytes": 2463724,
+      "edition": "java",
+      "category": "music",
+      "uuid": "b38adb57-db83-59fb-adc3-5437e883457a",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_nyang_nyang-1.0.0.zip",
+      "sha256": "cc2d12cbc582ca65a12ac3c13f565cac9ec3ca0f07efb6cbc331ca1dfced4959",
+      "bytes": 2462448,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "3a883e97-323c-5838-a9c9-8e839d040459",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_chipi_chapa-1.0.0.zip",
+      "sha256": "06e016e2090da816424c0176f89baea4f59d8cbcc3fd2dc9c5f05e3f491b8228",
+      "bytes": 2410823,
+      "edition": "java",
+      "category": "music",
+      "uuid": "4dd5d467-1062-5f15-ae8d-7ca63fe5b5d1",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_chipi_chapa-1.0.0.zip",
+      "sha256": "f938c62ed388e9fc0ec45b1ac96cb80ba12ffbb12deb7935efe15cb46b544673",
+      "bytes": 2409483,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "e6444e58-c40d-53db-b78e-ff9617d78676",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_country_diary-1.0.0.zip",
+      "sha256": "1ee1995efa32b799f00267d1ae65bd2798ef3cdfb486bb070993ac98d54620b2",
+      "bytes": 12517252,
+      "edition": "java",
+      "category": "music",
+      "uuid": "76d7a9ad-2b4b-583d-b91c-5280f50141ac",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_country_diary-1.0.0.zip",
+      "sha256": "160df3f534fad677f35b988ada8b06d18caf79c5e7b21d102f0b31f1bbe3bd12",
+      "bytes": 12509332,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "7e4f065f-8334-53e5-925c-b341e6d1c316",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_tooniverse_collection-1.0.0.zip",
+      "sha256": "52e688bef0fd3b7e2c4fdb5bdabb2532814a45e05ffd20916dda3780a2ab5b65",
+      "bytes": 67970442,
+      "edition": "java",
+      "category": "music",
+      "uuid": "552dd7dd-43eb-59bd-9494-9235d629c0d0",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_tooniverse_collection-1.0.0.zip",
+      "sha256": "74d2580c47a2a4299f0d3ee7b2408b9fc09c54385bb28286177239ee8cb1e45d",
+      "bytes": 67918403,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "687c8b6f-139d-5928-92bf-99324e0dbf91",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_christmas_carols-1.0.0.zip",
+      "sha256": "6bac16308df815c1b561e983092f104556bc061557c09d433041a813314c2b07",
+      "bytes": 94912051,
+      "edition": "java",
+      "category": "music",
+      "uuid": "01dcfb6b-6e61-5b66-bd0f-113edcf1f2e9",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_christmas_carols-1.0.0.zip",
+      "sha256": "0b6f652ccc045757c3b4b45cbf28522fa169224289bb0efa1fa820dc18eb33f6",
+      "bytes": 94842297,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "45cab29e-78ce-57bc-bcea-8850e39e2ece",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_jpop-1.0.0.zip",
+      "sha256": "272d4998299c6d80f04d0c5808c04833a8fd527eba9d6c73847d7d9db273c614",
+      "bytes": 74071701,
+      "edition": "java",
+      "category": "music",
+      "uuid": "33fd6a68-4714-55e7-a7d0-97bc790df577",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_jpop-1.0.0.zip",
+      "sha256": "2f5dad427656691950467d4aeea75b33d2f6264a7f8f789d169d2ef7290c4c4e",
+      "bytes": 74017408,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "1610cb02-28a2-578a-8134-04b969843078",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-java-playmud_black_mage_phase2-1.0.0.zip",
+      "sha256": "a63d40325003f60878649810c5fa02f428b677aa270a7156085ca179d59abe30",
+      "bytes": 1101836,
+      "edition": "java",
+      "category": "music",
+      "uuid": "4f856288-843e-5912-8c08-bde888769080",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-playmud_black_mage_phase2-1.0.0.zip",
+      "sha256": "6517cc09aa2e8c74a04a0bdf5720f365a42c3f935701a1a344a35b11518db084",
+      "bytes": 1101213,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "dbe3cf80-c846-55d4-a429-a32da4978167",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-cso_8bit_lobby-1.0.0.zip",
+      "sha256": "44ee62d9fac02c8e89572857c9afe7f965e3fb8b8010e5baa089d09211f6f5f8",
+      "bytes": 635,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "8315c47c-5920-5eff-8339-3e11f0436169",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-cso_christmas-1.0.0.zip",
+      "sha256": "3e77834890dc56e2c4064c05170b0380a3b838c0e41a3399f11a2bd208bbf6b9",
+      "bytes": 627,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "2cda362c-a442-565c-927d-b0a648a62160",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-cso_lobby-1.0.0.zip",
+      "sha256": "5dc62a7d7ebd6e3ee8e0e15f40c614e39e5053ae99517433be22697d5e97afcd",
+      "bytes": 626,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "416fce7e-f135-5635-9c2c-d4acbd9b0e8b",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_chipi_chapa-1.0.0.zip",
+      "sha256": "6976d5266c9a23b26f453d13323b571b46ce37c612e75ed55107657a688044c7",
+      "bytes": 638,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "1323bc81-1648-50dd-b6f6-020352d53196",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_christmas_carols-1.0.0.zip",
+      "sha256": "7ac7729e2469e77d5622188dece266fd2bf1cf6ef0e75e86f14c7895b2800a3a",
+      "bytes": 640,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "41b323af-e618-5fa4-92df-da130fa390c0",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_country_diary-1.0.0.zip",
+      "sha256": "d4dd511250558a30bd944c4700346f3358d9c2a7c05ad5e282c0033e4986baf7",
+      "bytes": 636,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "a047df2d-4bb0-562d-b240-953cb61d3610",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_freestyle_y-1.0.0.zip",
+      "sha256": "42c51af3621e31096b40f1c2eff3d203ebfa0b85dd8cf09c04e9537a8c4580af",
+      "bytes": 635,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "d701b285-6a9b-5230-bca7-9f5d645ca8d7",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_hurts_like_death-1.0.0.zip",
+      "sha256": "2b04d82c620b8f63f80d80eb0701f420a677966b80e446fc9fc8b5de95401dfc",
+      "bytes": 642,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "f58d0dd8-b383-5d8b-b861-a5bb8f226821",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_naemeori-1.0.0.zip",
+      "sha256": "b37a46596eb01d5ab939de685ad930140418994303d03d6e5e362a90cfdf9a86",
+      "bytes": 628,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "44188f11-0169-5d86-8c5c-27b402b10ed2",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_nyang_nyang-1.0.0.zip",
+      "sha256": "e2a676b50c0b355537404869480d477f6500d052949efdc4c467a4e991365909",
+      "bytes": 633,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "fb883b57-34c9-5362-8413-2885d67ba103",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_tokyo_teddy_bear-1.0.0.zip",
+      "sha256": "d0cdeeac06fa29eed4696439575fe548765a518727f65ec6247a17868941deff",
+      "bytes": 641,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "fbe41430-400c-5227-b3f5-ae02c0d84f23",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_tooniverse_collection-1.0.0.zip",
+      "sha256": "06e5078980d3a458b0df21266016e30b516cd233bffee05c3dbf2025e61db4fb",
+      "bytes": 644,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "789cd988-efb5-51e5-8634-af9d924c93fa",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_black_mage_phase2-1.0.0.zip",
+      "sha256": "8ccb74cfc8958d6defaea52149216e3ae913e9cb687c5586d8c6e90850897108",
+      "bytes": 645,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "b30ad584-5e01-50c7-9209-de4f9a39c24c",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    },
+    {
+      "name": "playmud-sync-bedrock-seek-playmud_jpop-1.0.0.zip",
+      "sha256": "598c87a730004379c0ef6e6e9d6d0ecf319e21aa47887d65c8f4ac123f12d8b6",
+      "bytes": 627,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "c4aee58b-b230-53eb-a2a8-28dd25ac82c5",
+      "version": "1.0.0",
+      "source_releases": {
+        "release": "playmud-sync-20261111-v1"
+      },
+      "target_group": "music-sync-20261111-v1"
+    }
+  ]
+}
