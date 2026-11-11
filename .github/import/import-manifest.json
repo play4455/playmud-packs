@@ -1,0 +1,497 @@
+{
+  "schema": 1,
+  "repository": "play4455/playmud-packs",
+  "branch": "main",
+  "files": [
+    {
+      "name": "frames-bedrock-catdance-0140bedbaeb27112.zip",
+      "sha256": "0140bedbaeb271126c25ee59f381791c55eace448f0ff6919324d952e0908665",
+      "bytes": 6654050,
+      "edition": "bedrock",
+      "category": "frames",
+      "uuid": "92607e76-0043-56f6-b698-b651b4dec8d5",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "frames-bedrock-spincat-5e7009bf6cf39fbc.zip",
+      "sha256": "5e7009bf6cf39fbcb5d38f3da552f9758b63dec3e7ef739dfbec365fd8a2e5ea",
+      "bytes": 13376291,
+      "edition": "bedrock",
+      "category": "frames",
+      "uuid": "a55e5249-5a27-59c3-bc96-1e24bdb5d1da",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "frames-java-catdance-1c82dd87d1010f6f.zip",
+      "sha256": "1c82dd87d1010f6facab6b9d49455c7d2a5970a528580d00f94e36271608fe84",
+      "bytes": 7066155,
+      "edition": "java",
+      "category": "frames",
+      "uuid": "4ff291db-8410-5c71-9a86-74191cb02f5a",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "frames-java-spincat-698d0d9c93a674f2.zip",
+      "sha256": "698d0d9c93a674f20e53faa327becc1fa95260471d50cf8ea6ab914996fd25b1",
+      "bytes": 13656395,
+      "edition": "java",
+      "category": "frames",
+      "uuid": "776bb38f-eebf-59f6-8e5e-166f8306bf26",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "geyser-integrated-1.1.5-539a48b326916e81.zip",
+      "sha256": "539a48b326916e815cd3a3b177f86b2d704c30865f9f7bda8b6885cff47a3d47",
+      "bytes": 146304,
+      "edition": "bedrock",
+      "category": "integrated",
+      "uuid": "2254393d-8430-45b0-838a-bd397828c765",
+      "version": "1.1.5",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-cso_8bit_lobby-a643bc2d99495a83.zip",
+      "sha256": "a643bc2d99495a83b3960fdfec360e229d9b30f9284adc9c7b61a398dc5bd46d",
+      "bytes": 883293,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "1c2c6bbc-7cde-5a54-ad18-156f2aa95e8d",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-cso_christmas-8e645c85b5960052.zip",
+      "sha256": "8e645c85b5960052b712fe5ffb9f857e7ec30b36fdf65260f1d9af89777019c9",
+      "bytes": 787411,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "29765ab3-dfb3-5ed8-88b3-d5f695361d94",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-cso_lobby-741252e3a2d842cb.zip",
+      "sha256": "741252e3a2d842cb90974b05dc32e22b6567ff7345b71a50a06bc4c482e005df",
+      "bytes": 1551042,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "83f861f4-4db8-5e7d-bb84-684ec6800dc7",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_black_mage_phase2-13f3ea75985dc3fd.zip",
+      "sha256": "13f3ea75985dc3fdee68670e9d445de560291d8c406878fba71c3c48536fb040",
+      "bytes": 1025522,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "e5c9dc26-c294-5ee7-83db-f1e3d74c243d",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_chipi_chapa-77953e637e8b8328.zip",
+      "sha256": "77953e637e8b83286888242c0cb972aabe641ae4c96e146749c867ca0454e850",
+      "bytes": 2251506,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "32574d5d-0a78-5222-9b95-a98719c9f55d",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_christmas_carols-0a4a98dc19c82f23.zip",
+      "sha256": "0a4a98dc19c82f23ae406f9bf0654b4d9ddd7b37372a2086dafef47e1e2275bb",
+      "bytes": 88279001,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "3adf9217-2c8e-5fce-8490-cc0494069d78",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_country_diary-bb90358a43e11a37.zip",
+      "sha256": "bb90358a43e11a37404ffe070bbe63d207b80d9a0fba262fe856fa2372d25933",
+      "bytes": 11670837,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "c5d415a3-6ea0-54fc-96c1-9d8e23d542fb",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_freestyle_y-32d77d00fcebeeeb.zip",
+      "sha256": "32d77d00fcebeeebfa1cfeadcc3abf356a3d61565d04f2066fb7cf2e1988380a",
+      "bytes": 3069264,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "9b9e3ba9-b1c0-5589-b7c0-ff7c4eda9e1d",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_hurts_like_death-7be552379d4c6704.zip",
+      "sha256": "7be552379d4c6704d1895f30503c92a49efe880d429f71a4fe5a37eb823922da",
+      "bytes": 2837700,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "0217d6bd-6e9d-5981-8f51-280ff7e67dc0",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_jpop-0e2f99f6a2118fbd.zip",
+      "sha256": "0e2f99f6a2118fbdee4b61dc0a89867574711c197a78b625d2b229547cd73270",
+      "bytes": 68917618,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "ec821210-0f19-5370-ae7c-04fee8a28c15",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_naemeori-d8fb5ad1c07bf990.zip",
+      "sha256": "d8fb5ad1c07bf9907de11d19530eeab47c19ddb9f2b1f730cecd96a609e820ba",
+      "bytes": 2587202,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "c21c8c7c-ed5d-5317-87da-1d20f7a5781a",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_nyang_nyang-c8b1d2a4bdab776e.zip",
+      "sha256": "c8b1d2a4bdab776e2c0bb336a1eeabe9446f6299a32ee7b3d5d6859dd442be72",
+      "bytes": 2310280,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "774e0795-c54f-5984-b336-7b12d467082a",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_tokyo_teddy_bear-718bf18663987eaf.zip",
+      "sha256": "718bf18663987eaf47ef3b48c027fc7a255028b4ae1d90759987e2ced4c73d3e",
+      "bytes": 36673820,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "608d1b10-76b1-572b-8346-f74f292f99af",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-bedrock-playmud_tooniverse_collection-ecd55ab137bc68e1.zip",
+      "sha256": "ecd55ab137bc68e10fd9f4f8dd9f2c95fa65a5b98b23618cf4c05fe62a659abf",
+      "bytes": 62956203,
+      "edition": "bedrock",
+      "category": "music",
+      "uuid": "64af6065-1f39-50f2-a097-24e010de51ef",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-cso_8bit_lobby-74817a31610081b1.zip",
+      "sha256": "74817a31610081b1265afcb241e60beee53f105a6a31a650a181058aab46f57e",
+      "bytes": 882862,
+      "edition": "java",
+      "category": "music",
+      "uuid": "8ee52cda-31f4-59df-a141-25640f043110",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-cso_christmas-0599cd8d56d8aca4.zip",
+      "sha256": "0599cd8d56d8aca4cd292db8d2c64a9cee75bf5f239416f8860a8c04a3fa1f55",
+      "bytes": 786986,
+      "edition": "java",
+      "category": "music",
+      "uuid": "e2bd7d11-e8d0-5531-a05b-425157a08722",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-cso_lobby-2c4e0938c8a7cfdc.zip",
+      "sha256": "2c4e0938c8a7cfdcbc635569fca08e57cb50c47c7ccbad8787ea3acd0fe59343",
+      "bytes": 1550617,
+      "edition": "java",
+      "category": "music",
+      "uuid": "7522894f-27a0-5f49-8e55-af324f873e9e",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_black_mage_phase2-46c1561c47a45b7e.zip",
+      "sha256": "46c1561c47a45b7e84c46b0cef5f2dc4ee044d3d5a91241bfd9cec024e6cf5b9",
+      "bytes": 1025086,
+      "edition": "java",
+      "category": "music",
+      "uuid": "9ddff2ed-c77c-58ba-a7ae-451c34fa481d",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_chipi_chapa-66bc75bb00a47e43.zip",
+      "sha256": "66bc75bb00a47e43379c445b82d5363e3c3548ca85e6f0fd931ce46f62e47c3a",
+      "bytes": 2251074,
+      "edition": "java",
+      "category": "music",
+      "uuid": "2ac9aa6c-711f-59cb-b8f5-70861ec97b02",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_christmas_carols-b860eeae8b0a0e05.zip",
+      "sha256": "b860eeae8b0a0e050f6278a1a6ada3a1406cd6dece844d50b5217568695cc38e",
+      "bytes": 88278565,
+      "edition": "java",
+      "category": "music",
+      "uuid": "dbe01b65-3c83-595a-ad38-b8886937faf6",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_country_diary-8267881ca4e8a488.zip",
+      "sha256": "8267881ca4e8a4889c0ca5f3d0a257bf4d081361c770aa9d12ab6f53f8181605",
+      "bytes": 11670405,
+      "edition": "java",
+      "category": "music",
+      "uuid": "8c7ee315-0143-52b9-8ffc-768b0340b23c",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_freestyle_y-0874c84526bd341f.zip",
+      "sha256": "0874c84526bd341fd6ef88495b22a8145300b4d60306b29b6ffa198485ab498c",
+      "bytes": 3068833,
+      "edition": "java",
+      "category": "music",
+      "uuid": "76fff1f1-25f0-5d8e-8923-e79b4e44dc2b",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_hurts_like_death-5c9ead6808bdcdf9.zip",
+      "sha256": "5c9ead6808bdcdf978d31aad44884d24df9553b7ac051b9daae2cc9991903774",
+      "bytes": 2837266,
+      "edition": "java",
+      "category": "music",
+      "uuid": "47820fee-3098-5bf8-aebe-672cc0c7366a",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_jpop-a447d42512e1237d.zip",
+      "sha256": "a447d42512e1237d841836a4f0f03d022094c800207ba115b3a5ae96d4f1b980",
+      "bytes": 68917194,
+      "edition": "java",
+      "category": "music",
+      "uuid": "845b80c5-a9e5-53e3-80bf-34e116f0353e",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_naemeori-5a4390d910ceb4c8.zip",
+      "sha256": "5a4390d910ceb4c8d6bd007815c546a4970d609283f7e42ceeb4de93d9c3348f",
+      "bytes": 2586775,
+      "edition": "java",
+      "category": "music",
+      "uuid": "9a17f5e3-7cec-59f0-b4d4-d05b78078d8d",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_nyang_nyang-33e12d6b9d0c3d32.zip",
+      "sha256": "33e12d6b9d0c3d324f8e09a5eff873872ca0f8c4201beb2dae5e5c9c9aceb500",
+      "bytes": 2309848,
+      "edition": "java",
+      "category": "music",
+      "uuid": "daa37dcc-1d3f-501d-b9c6-b3c941034a77",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_tokyo_teddy_bear-48fb4097c29c6b0f.zip",
+      "sha256": "48fb4097c29c6b0f6340285e77c056fa95682c106ce60e8cb2a19aaec0ab0c0a",
+      "bytes": 36673384,
+      "edition": "java",
+      "category": "music",
+      "uuid": "d06630a3-9ad6-5c95-a959-d1c62e840d74",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "music-java-playmud_tooniverse_collection-4683718a100ee3f6.zip",
+      "sha256": "4683718a100ee3f6e735d524257a76edfca947f28b3972f54f14145d8ef9ee7c",
+      "bytes": 62955768,
+      "edition": "java",
+      "category": "music",
+      "uuid": "be5a8cc5-9b02-5b7a-9915-0a5158c33a35",
+      "version": "",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "20261111-jpop-blackmage-1.0.0"
+      },
+      "target_group": "existing-20261111"
+    },
+    {
+      "name": "frames-java-image_bundle_7-fd684f2fd114ebaa.zip",
+      "sha256": "fd684f2fd114ebaaf8e92e351883da7a7c8872474cf3bfdad72d20888a378d45",
+      "bytes": 18446918,
+      "edition": "java",
+      "category": "frames",
+      "uuid": "54127160-8860-54e9-ac91-2adf99f295b1",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "image_bundle_7-20261111t003857-d5be935b"
+      },
+      "target_group": "image-bundle-20261111"
+    },
+    {
+      "name": "frames-bedrock-image_bundle_7-5b8963a8689db674.zip",
+      "sha256": "5b8963a8689db6749c926d5a7d4bc147681a980b394ab3370b6e4d1573f257be",
+      "bytes": 18506205,
+      "edition": "bedrock",
+      "category": "frames",
+      "uuid": "df434124-5ff6-58e6-9d39-8be5af5faf9f",
+      "version": "1.0.0",
+      "source_releases": {
+        "nas": "20261111-jpop-blackmage-1.0.0",
+        "pc": "image_bundle_7-20261111t003857-d5be935b"
+      },
+      "target_group": "image-bundle-20261111"
+    }
+  ]
+}
